@@ -1,0 +1,21 @@
+// 로컬 myspql 로그인
+mysql -u root -p 
+
+// 쉘 로그아웃 명령어
+exit
+
+// 서버 정지
+mysqladmin -u root -p shutdown
+
+// 서버 재시작
+mysqladmin -u root -p reload
+
+//데이터 베이스 확인(꼭 콤마 붙이기)
+show databases;
+
+//데이터 베이스 만들기
+create database DB이름
+
+//테이블 만들기전 데이터베이스 선택
+use DB이름
+show tables;

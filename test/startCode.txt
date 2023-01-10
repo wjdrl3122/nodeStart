@@ -1,0 +1,67 @@
+// 프로젝트 생성
+1. npm init -y
+
+2. github repository 생성
+
+3. git init
+
+4. git add .
+
+ github 홈페이지에서 repository 연결 명령어 가져오기
+
+5. touch app.js routes .gitignore .env
+
+//app.js
+const express = require("express");
+const app = express();
+
+// env setting
+require("dotenv").config();
+
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, console.log("Server don start for port:" + PORT));
+
+
+// .gitignore
+node_modules/
+// .env
+POST=3000
+// nodemenSet
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+서버실행 npm start
+
+// 포트 암호화
+npm i dotenv
+touch env.
+//자동 서버 실행 package.json -> script 설정 필요 
+npm i nodemon -D
+
+//
+mysql
+시퀄
+joi : 유효성 검사
+jsonwebtoken : jwt 토큰생성, 디코딩
+bcrypt :  암호화 디코딩 
+//
+npm i express mysql2 sequelize joi jsonwebtoken bcrypt
+//전역 sequelize-cli 설치(cli을 이용해 시퀄초기화 가능)
+npm i -g sequelize-cli
+
+//패키지 설치시 권한부여
+dsenableroot
+su -
+exit
+
+//디렉토리
+//  MVC 패턴
+md controllers models routes
+//  Layered Architecture
+md controllers
+
+git add -A
+git commit -m "first commit"
+git config --global push.default current // push 인자생략 설정
+git push //현재 브런치에서 원격 푸시
+git push -f // 코드 변경이력 덮어씌우기
